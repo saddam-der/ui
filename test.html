@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9160f1ecce.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <!-- <div class="card card--primary">
+            <div class="card__body">
+                asdsad
+            </div>
+        </div> -->
+
+        <div id="qwer" class="row">
+            <div class="col-3 offset-9 ">
+
+                <div class="col-12">
+                    <div class="row close-bar">
+                        <div class="close" onclick="closeForm()">
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 main">
+                    <div class="row" id="homechat">
+                        <div class="col-12 header">
+                            <i class="fas fa-comment-alt icon-header"></i>
+                            <bold>freshchat</bold>
+                        </div>
+                    </div>
+                    <div class="row" id="backchat">
+                        <div class="col-12 header-chat">
+                            <i class="fas fa-chevron-left icon-header-chat" onclick="backChat()"></i>
+                            <bold class="text-header-chat">HELP</bold>
+                        </div>
+                    </div>
+                    <div class="row" id="chat">
+                        <div class="col-11 chat-head">
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+                                <div class="col-8 chat-isi">
+                                    <p>
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you as soon as we can! 
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-12 chat-input">
+                            <div class="row chat">
+                                <div id="chat-input">
+                                    <form>
+                                        <input type="text" id="input-text"  placeholder="Balas Disini..." >
+                                        <div class="upload">
+                                            <label class="chat-file" for="file-"><i class="fas fa-bars chat-submit"></i></label>
+                                            <input type="file" id="file-">
+                                            <i class="fas fa-paper-plane chat-submit"></i>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="home">
+                        <div class="col-11 content-head">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="text-head"> Kirimkan Pesan Kami</p>
+                                </div>
+                            </div>
+
+                            <div class="row menu" onclick="openChat()">
+                                <div class="col-2">
+                                    <i class="fas fa-headset fa-2x icon"></i>
+                                </div>
+                                <div class="col-7">
+                                    <p> <b> HELP </b> <br> Hello There </p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-11 content-mid">
+                            <div class="col-12">
+                                <p class="text-content"> FAQ</p>
+                            </div>
+                            <div class="row menu-start">
+                                <div class="col-2">
+                                    <i class="fas fa-film fa-2x icon-content"></i>
+                                </div>
+                                <div class="col-10 text">
+                                    <p> <b> Product Tours </b> </p>
+                                </div>
+                            </div>
+                            <div class="row menu-content ">
+                                <div class="col-2">
+                                    <i class="fas fa-tags icon-content-price"></i>
+                                </div>
+                                <div class="col-10 text">
+                                    <p> <b> Pricing Plansa </b> </p>
+                                </div>
+                            </div>
+                            <div class="row menu-content">
+                                <div class="col-2">
+                                    <i class="fas fa-mobile fa-2x icon-content-android"></i>
+                                </div>
+                                <div class="col-10">
+                                    <p> <b> Mobile SDK and Intergrations </b> </p>
+                                </div>
+                            </div>
+
+                            <div class="row menu-end">
+                                <div class="col-12">
+                                    <p class="text-main-footer"> Tampilkan Lebih Banyak Kategori</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+        <div class="button-up" id="button-pop" onclick="openForm()">
+            <i class="fas fa-comment-alt"></i>
+        </div>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("qwer").style.display = "block";
+            document.getElementById("button-pop").style.display = "none";
+        }
+
+        function closeForm() {
+            document.getElementById("button-pop").style.display = "block";
+            document.getElementById("qwer").style.display = "none";
+        }
+
+        function openChat(){
+            document.getElementById("chat").style.display = "block";
+            document.getElementById("backchat").style.display = "block";
+            document.getElementById("home").style.display = "none";
+            document.getElementById("homechat").style.display = "none";
+        }
+        
+        function backChat(){
+            document.getElementById("homechat").style.display = "block";
+            document.getElementById("home").style.display = "block";
+            document.getElementById("backchat").style.display = "none";
+            document.getElementById("chat").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>
