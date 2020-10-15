@@ -15,11 +15,11 @@ body
     font-size: 15px
 
 #qwer
-    // display: none    
+    display: none    
     margin-top: 20px
     margin-right: 20px
-    -webkit-animation: fadeInUp 500ms ease-in-out
-    animation: fadeInUp 500ms ease-in-out
+    // -webkit-animation: fadeInUp 500ms ease-in-out
+    // animation: fadeInUp 500ms ease-in-out
     // background: black
     
 // .card {
@@ -56,7 +56,7 @@ body
     padding: 10px
     width: 31px
     font-size: 12px
-    background: lightblue
+    background: rgb(52, 98, 189)
 
 .main
     // top: 50px
@@ -86,7 +86,9 @@ body
     padding-top: 10px
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.12)
 
-.text-content
+.text-header-chat
+    font-size: 16px
+    margin-left: 10px
     
 
 .icon
@@ -164,7 +166,7 @@ body
     // margin-bottom: 10px
 
 .button-up
-    display: none
+    display: block
     float: right
     margin-right: 20px
     margin-top: 620px
@@ -182,9 +184,34 @@ body
     margin-left: 15px 
     height: 470px
     border-radius: 10px
-    padding-top: 20px
+    // padding-top: 20px
+    padding-bottom: 20px
     background: white
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.12)
+    overflow: auto
+
+.chat-content-profile
+    margin-bottom: 10px
+    height: 40px
+    // background: red
+
+.icon-search
+    position: relative
+    right: 10px
+
+.icon-cari
+    cursor: pointer
+    border: 1px solid rgb(223, 223, 223)
+    border-radius: 55px 
+    height: 25px
+    margin-right: 22px
+    padding-right: 10px
+    // background: blue
+    
+.icon-cari:hover
+    background:  rgb(223, 223, 223)
+
+
 
 #chat
     display: none
@@ -210,8 +237,7 @@ body
     border-bottom-right-radius: 5px
     border-bottom-left-radius: 5px
     overflow: hidden
-    -webkit-animation: fadeInUp 500ms ease-in-out
-    animation: fadeInUp 500ms ease-in-out
+    
 
 .upload > input
     display: none;
@@ -230,13 +256,10 @@ body
     height: 35px
     cursor: pointer
 
-.chat-sumbit:hover
-
-
 #backchat
     display: none
-    -webkit-animation: fadeInUp 500ms ease-in-out
-    animation: fadeInUp 500ms ease-in-out
+    // -webkit-animation: fadeInUp 500ms ease-in-out
+    // animation: fadeInUp 500ms ease-in-out
 
 .header-chat
     height: 87px
@@ -260,29 +283,56 @@ body
     cursor: pointer
     border-radius: 5px
 
-.chat-content
-    // margin-left: 8px
+.icon-header-chat:hover
+    background: #6786c4
 
 .chat-icon
     margin-right: 10px
 
 .icon-profile
-    background: rgb(42, 41, 128)
+    background: rgb(52, 98, 189)
     width: 24px
-    padding-top: 4px
+    padding-top: 6px
     height: 24px
     color: white
-    font-size: 13px
+    font-size: 12px
     text-align: center
     position: relative
     // bottom: 10px
     border-radius: 25px 25px 25px 25px
 
-.chat-isi
+.icon-profile-chat
+    font-size: 30px
+    padding-top: 5px
+
+.nama-profile
+    margin-top: 3px
+    position: relative
+    right: 20px
+    font-size: 20px
+
+.chat-isi-balas
     border-radius: 0px 20px 20px 20px
     font-size: 14px
     padding: 10px
-    background: rgb(247, 247, 247)
+    float: left
+    max-width: 300px
+    background: rgb(223, 223, 223)
+
+.chat-isi-self
+    max-width: 300px
+    float: right
+    border-radius: 20px 0px 20px 20px
+    font-size: 14px
+    padding: 10px
+    background: rgb(52, 98, 189)
+
+.chat-content-profile
+    border-bottom: 1px solid rgb(228, 214, 214) 
+
+#home
+    -webkit-animation: fadeInUp 500ms ease-in-out
+    animation: fadeInUp 500ms ease-in-out
     
     
         

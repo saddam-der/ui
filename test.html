@@ -41,37 +41,123 @@
                             <bold>freshchat</bold>
                         </div>
                     </div>
-                    <div class="row" id="backchat">
-                        <div class="col-12 header-chat">
+                    <div class="row header-chat" id="backchat">
+                        <div class="col-1 ">
                             <i class="fas fa-chevron-left icon-header-chat" onclick="backChat()"></i>
-                            <bold class="text-header-chat">HELP</bold>
+                        </div>
+                        <div class="col-10 text-header-chat">
+                            <bold>HELP</bold> <br> <small>Saat ini membalas kurang dari 2 jam</small>
                         </div>
                     </div>
                     <div class="row" id="chat">
                         <div class="col-11 chat-head">
+                            <div class="row chat-content-profile">
+                                <div class="col-2">
+                                    <i class="fas fa-user-circle icon-profile-chat"></i>
+                                </div>
+                                <div class="col-10 nama-profile">
+                                    Diva
+                                </div>
+                            </div>
                             <div class="row chat-content">
                                 <div class="col-1 chat-icon">
                                     <i class="fas fa-bars icon-profile"></i>
                                 </div>
-                                <div class="col-8 chat-isi">
-                                    <p>
-                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you as soon as we can! 
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small>
+                                    <p class="chat-isi-balas">
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you
+                                        as soon as we can!
                                     </p>
                                 </div>
                             </div>
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small>
+                                    <p class="chat-isi-balas">
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you
+                                        as soon as we can!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small>
+                                    <p class="chat-isi-balas">
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you
+                                        as soon as we can!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small>
+                                    <p class="chat-isi-balas">
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you
+                                        as soon as we can!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small>
+                                    <p class="chat-isi-balas">
+                                        Hello there! 👋 Need help? Reach out to us right here, and we'll get back to you
+                                        as soon as we can!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row chat-content">
+                                <div class="col-1 chat-icon">
+                                    <i class="fas fa-bars icon-profile"></i>
+                                </div>
+
+                                <div class="col-8 ">
+                                    <small>freshchat</small><br>
+                                    <p class="chat-isi-balas">
+                                        Hello there!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row chat-content-self">
+                                <div class="col-8 offset-4">
+                                    <p class="chat-isi-self">
+                                        Sup Homie lorem100
+                                    </p>
+                                </div>
+
+                            </div>
                         </div>
-                    
+
                         <div class="col-12 chat-input">
                             <div class="row chat">
                                 <div id="chat-input">
                                     <form>
-                                        <input type="text" id="input-text"  placeholder="Balas Disini..." >
+                                        <input type="text" id="input-text" placeholder="Balas Disini...">
                                         <div class="upload">
-                                            <label class="chat-file" for="file-"><i class="fas fa-bars chat-submit"></i></label>
+                                            <label class="chat-file" for="file-"><i
+                                                    class="fas fa-paperclip chat-submit"></i></label>
                                             <input type="file" id="file-">
-                                            <i class="fas fa-paper-plane chat-submit"></i>
+                                            <i class="fas fa-smile chat-submit"></i>
                                         </div>
-                                        
+
                                     </form>
                                 </div>
                             </div>
@@ -95,10 +181,15 @@
                                 </div>
                             </div>
                         </div>
-                    
+
                         <div class="col-11 content-mid">
-                            <div class="col-12">
-                                <p class="text-content"> FAQ</p>
+                            <div class="row">
+                                <div class="col-2">
+                                    <p class="text-content"> FAQ</p>
+                                </div>
+                                <div class="col-1 offset-8 icon-cari">
+                                    <i class="fas fa-search icon-search"></i>
+                                </div>
                             </div>
                             <div class="row menu-start">
                                 <div class="col-2">
@@ -131,7 +222,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div> 
+                    </div>
                 </div>
             </div>
         </div>
@@ -150,14 +241,14 @@
             document.getElementById("qwer").style.display = "none";
         }
 
-        function openChat(){
+        function openChat() {
             document.getElementById("chat").style.display = "block";
-            document.getElementById("backchat").style.display = "block";
+            document.getElementById("backchat").style.display = "flex";
             document.getElementById("home").style.display = "none";
             document.getElementById("homechat").style.display = "none";
         }
-        
-        function backChat(){
+
+        function backChat() {
             document.getElementById("homechat").style.display = "block";
             document.getElementById("home").style.display = "block";
             document.getElementById("backchat").style.display = "none";

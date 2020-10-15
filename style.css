@@ -14,10 +14,9 @@ body {
 }
 
 #qwer {
+  display: none;
   margin-top: 20px;
   margin-right: 20px;
-  -webkit-animation: fadeInUp 500ms ease-in-out;
-  animation: fadeInUp 500ms ease-in-out;
 }
 
 .header {
@@ -39,7 +38,7 @@ body {
   padding: 10px;
   width: 31px;
   font-size: 12px;
-  background: lightblue;
+  background: #3462bd;
 }
 
 .main {
@@ -69,6 +68,11 @@ body {
   padding-top: 10px;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+}
+
+.text-header-chat {
+  font-size: 16px;
+  margin-left: 10px;
 }
 
 .icon {
@@ -152,7 +156,7 @@ body {
 }
 
 .button-up {
-  display: none;
+  display: block;
   float: right;
   margin-right: 20px;
   margin-top: 620px;
@@ -171,10 +175,34 @@ body {
   margin-left: 15px;
   height: 470px;
   border-radius: 10px;
-  padding-top: 20px;
+  padding-bottom: 20px;
   background: white;
   -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.12);
+  overflow: auto;
+}
+
+.chat-content-profile {
+  margin-bottom: 10px;
+  height: 40px;
+}
+
+.icon-search {
+  position: relative;
+  right: 10px;
+}
+
+.icon-cari {
+  cursor: pointer;
+  border: 1px solid #dfdfdf;
+  border-radius: 55px;
+  height: 25px;
+  margin-right: 22px;
+  padding-right: 10px;
+}
+
+.icon-cari:hover {
+  background: #dfdfdf;
 }
 
 #chat {
@@ -199,8 +227,6 @@ body {
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
   overflow: hidden;
-  -webkit-animation: fadeInUp 500ms ease-in-out;
-  animation: fadeInUp 500ms ease-in-out;
 }
 
 .upload > input {
@@ -224,8 +250,6 @@ body {
 
 #backchat {
   display: none;
-  -webkit-animation: fadeInUp 500ms ease-in-out;
-  animation: fadeInUp 500ms ease-in-out;
 }
 
 .header-chat {
@@ -253,26 +277,62 @@ body {
   border-radius: 5px;
 }
 
+.icon-header-chat:hover {
+  background: #6786c4;
+}
+
 .chat-icon {
   margin-right: 10px;
 }
 
 .icon-profile {
-  background: #2a2980;
+  background: #3462bd;
   width: 24px;
-  padding-top: 4px;
+  padding-top: 6px;
   height: 24px;
   color: white;
-  font-size: 13px;
+  font-size: 12px;
   text-align: center;
   position: relative;
   border-radius: 25px 25px 25px 25px;
 }
 
-.chat-isi {
+.icon-profile-chat {
+  font-size: 30px;
+  padding-top: 5px;
+}
+
+.nama-profile {
+  margin-top: 3px;
+  position: relative;
+  right: 20px;
+  font-size: 20px;
+}
+
+.chat-isi-balas {
   border-radius: 0px 20px 20px 20px;
   font-size: 14px;
   padding: 10px;
-  background: #f7f7f7;
+  float: left;
+  max-width: 300px;
+  background: #dfdfdf;
+}
+
+.chat-isi-self {
+  max-width: 300px;
+  float: right;
+  border-radius: 20px 0px 20px 20px;
+  font-size: 14px;
+  padding: 10px;
+  background: #3462bd;
+}
+
+.chat-content-profile {
+  border-bottom: 1px solid #e4d6d6;
+}
+
+#home {
+  -webkit-animation: fadeInUp 500ms ease-in-out;
+  animation: fadeInUp 500ms ease-in-out;
 }
 /*# sourceMappingURL=style.css.map */
